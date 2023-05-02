@@ -5,7 +5,9 @@ import { primary, textColorBlack, textColorLightGrey, textColorWhite } from '../
 
 export const HeaderSection = styled('header')`
 	padding: 1rem 0.5rem;
-	position: sticky;
+	height: 2rem;
+	position: relative;
+	z-index: 10;
 
 	.ant-row-space-between {
 		align-items: center;
