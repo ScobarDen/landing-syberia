@@ -1,11 +1,5 @@
 import { lazy } from 'react';
-import AboutContent from '../../content/AboutContent.json';
-import ContactContent from '../../content/ContactContent.json';
 import HeaderBlockContent from '../../content/HeaderBlockContent.json';
-import IntroContent from '../../content/IntroContent.json';
-import MiddleBlockContent from '../../content/MiddleBlockContent.json';
-import MissionContent from '../../content/MissionContent.json';
-import ProductContent from '../../content/ProductContent.json';
 
 const Contact = lazy(() => import('../../components/ContactForm'));
 const MiddleBlock = lazy(() => import('../../components/MiddleBlock'));
@@ -18,7 +12,7 @@ const Home = () => {
 	return (
 		<>
 			<HeaderContentBlock id='headerContent' {...HeaderBlockContent} />
-			<Container>
+			{/* <Container>
 				<ScrollToTop />
 				<ContentBlock
 					type='right'
@@ -56,7 +50,7 @@ const Home = () => {
 					id='product'
 				/>
 				<Contact title={ContactContent.title} content={ContactContent.text} id='contact' />
-			</Container>
+			</Container> */}
 		</>
 	);
 };
