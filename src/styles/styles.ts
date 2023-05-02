@@ -1,4 +1,5 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
+import { primary, primaryBackground, textColorBlack, textColorLightGrey } from './colors';
 
 export const Styles = createGlobalStyle`
 
@@ -14,11 +15,29 @@ export const Styles = createGlobalStyle`
         font-style: normal;
     }
 
+    @font-face {
+        font-family: "Inter Bold";
+        src: url("/fonts/Inter-Bold.ttf") format("truetype");
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "Inter Light";
+        src: url("/fonts/Inter-Light.ttf") format("truetype");
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "Inter Regular";
+        src: url("/fonts/Inter-Regular.ttf") format("truetype");
+        font-style: normal;
+    }
+
 
     body,
     html,
     a {
-        font-family: 'Motiva Sans Light', sans-serif;
+        font-family: 'Inter Regular', sans-serif;
     }
 
 
@@ -27,19 +46,19 @@ export const Styles = createGlobalStyle`
         padding:0;
         border: 0;
         outline: 0;
-        background: #fff;
+        background: ${primaryBackground};
         overflow-x: hidden;
     }
 
     a:hover {
-        color: #18216d;
+        color: ${primary};
     }
 
     input,
     textarea {
         border-radius: 4px;
         border: 0;
-        background: rgb(241, 242, 243);
+        background: ${primaryBackground};
         transition: all 0.3s ease-in-out;  
         outline: none;
         width: 100%;  
@@ -47,7 +66,6 @@ export const Styles = createGlobalStyle`
 
         :focus-within {
             background: none;
-            box-shadow: #2e186a 0px 0px 0px 1px;
         }
     }
 
@@ -57,8 +75,8 @@ export const Styles = createGlobalStyle`
     h4,
     h5,
     h6 {
-        font-family: 'Motiva Sans Bold', serif;
-        color: #18216d;
+        font-family: 'Inter Bold', serif;
+        color: ${primary};
         font-size: 56px;
         line-height: 1.18;
 
@@ -72,7 +90,7 @@ export const Styles = createGlobalStyle`
     }
 
     p {
-        color: #18216d;
+        color: ${textColorBlack};
         font-size: 21px;        
         line-height: 1.41;
     }
@@ -84,10 +102,10 @@ export const Styles = createGlobalStyle`
     a {
         text-decoration: none;
         outline: none;
-        color: #2E186A;
+        color: ${textColorLightGrey};
 
         :hover {
-            color: #2e186a;
+            color: ${primary};
         }
     }
     
