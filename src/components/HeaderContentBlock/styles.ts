@@ -32,6 +32,7 @@ export const HeaderContentBlockSection = styled('div')`
 		max-width: 205px;
 	}
 	h1 {
+		font-weight: 700;
 		font-size: 64px;
 		line-height: 58px;
 		margin-bottom: 55px;
