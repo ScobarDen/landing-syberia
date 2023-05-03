@@ -1,20 +1,21 @@
 import styled from 'styled-components';
 import img from '../../img/backgroundImageHeader.png';
-import img2 from '../../img/backgroundImageHeaderLeft.png';
-import img3 from '../../img/backgroundImageHeaderRight.png';
+import leftImg from '../../img/backgroundImageHeaderLeft.png';
+import rightImg from '../../img/backgroundImageHeaderRight.png';
 import girl from '../../img/boy.png';
 import boy from '../../img/girl.png';
 import { textColorLightGrey, textColorWhite } from '../../styles/colors';
 //todo: разобраться с этими картинками на фоне
 export const HeaderContentBlockSection = styled('div')`
-	height: 650px;
-	// width: 100vw;
+	height: 670px;
 	position: relative;
-	top: -2rem;
-	background-image: url('${img2}'), url('${img3}'), url('${boy}'), url('${girl}'), url('${img}');
+	top: -40px;
+	background-image: url('${boy}'), url('${girl}'), url('${leftImg}'), url('${rightImg}'),
+		url('${img}');
 	background-repeat: no-repeat;
-	background-size: auto 750px, auto 750px, auto 530px, auto 500px, auto 650px;
-	background-position: -10% 0, top right, 50% 100%, 63% 100%, top center;
+	background-size: 435px 532px, 403px 532px, 70% 740px, 70% 740px, auto 740px;
+	background-position: calc(50% + 120px) calc(100% - 0px), calc(50% + 330px) calc(100% - 0px),
+		-70% 0, 220% 0, 50% 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -24,7 +25,23 @@ export const HeaderContentBlockSection = styled('div')`
 		color: ${textColorWhite};
 	}
 	p {
+		line-height: 19px;
+		font-size: 16px;
+		opacity: 0.7;
 		color: ${textColorLightGrey};
+		max-width: 205px;
+	}
+	h1 {
+		font-size: 64px;
+		line-height: 58px;
+		margin-bottom: 55px;
+	}
+
+	button {
+		font-size: 14px;
+		line-height: 20px;
+		padding: 10px 25px;
+		font-weight: 600;
 	}
 `;
 

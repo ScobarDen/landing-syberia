@@ -3,41 +3,10 @@ import { primary, primaryBackground, textColorBlack, textColorLightGrey } from '
 
 export const Styles = createGlobalStyle`
 
-    @font-face {
-        font-family: "Motiva Sans Light";
-        src: url("/fonts/Motiva-Sans-Light.ttf") format("truetype");
-        font-style: normal;
-    }
-
-    @font-face {
-        font-family: "Motiva Sans Bold";
-        src: url("/fonts/Motiva-Sans-Bold.ttf") format("truetype");
-        font-style: normal;
-    }
-
-    @font-face {
-        font-family: "Inter Bold";
-        src: url("/fonts/Inter-Bold.ttf") format("truetype");
-        font-style: normal;
-    }
-
-    @font-face {
-        font-family: "Inter Light";
-        src: url("/fonts/Inter-Light.ttf") format("truetype");
-        font-style: normal;
-    }
-
-    @font-face {
-        font-family: "Inter Regular";
-        src: url("/fonts/Inter-Regular.ttf") format("truetype");
-        font-style: normal;
-    }
-
-
     body,
     html,
     a {
-        font-family: 'Inter Regular', sans-serif;
+        font-family: 'Inter', sans-serif;
     }
 
 
@@ -75,7 +44,7 @@ export const Styles = createGlobalStyle`
     h4,
     h5,
     h6 {
-        font-family: 'Inter Bold', serif;
+        font-family: 'Inter', sans-serif;
         color: ${primary};
         font-size: 56px;
         line-height: 1.18;

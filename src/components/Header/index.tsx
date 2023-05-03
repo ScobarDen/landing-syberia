@@ -52,7 +52,10 @@ const Header = ({ t }: any) => {
 				<CustomNavLinkSmall onClick={() => scrollTo('delectus')}>
 					<Span>{t('delectus')}</Span>
 				</CustomNavLinkSmall>
-				<CustomNavLinkSmall style={{ width: '93px' }} onClick={() => scrollTo('contact')}>
+				<CustomNavLinkSmall
+					style={{ width: '93px', marginLeft: '15px', marginRight: '0' }}
+					onClick={() => scrollTo('contact')}
+				>
 					<Span>
 						<Button>{t('Связаться')}</Button>
 					</Span>

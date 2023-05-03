@@ -4,14 +4,19 @@ import styled from 'styled-components';
 import { primary, textColorBlack, textColorLightGrey, textColorWhite } from '../../styles/colors';
 
 export const HeaderSection = styled('header')`
-	padding: 1rem 0.5rem;
-	height: 2rem;
+	padding: 23px 0 0 0;
+	height: 40px;
 	position: relative;
 	z-index: 10;
 
 	.ant-row-space-between {
 		align-items: center;
 		text-align: center;
+	}
+
+	button {
+		font-size: 12px;
+		padding: 7px 15px;
 	}
 `;
 
@@ -71,10 +76,11 @@ export const Menu = styled('h5')`
 `;
 
 export const CustomNavLinkSmall = styled(NavLink)`
-	font-size: 1rem;
+	font-size: 15px;
+	font-weight: 500;
 	color: ${textColorLightGrey};
 	transition: color 0.2s ease-in;
-	margin: 0.5rem 2rem;
+	margin: auto 20px;
 
 	@media only screen and (max-width: 768px) {
 		margin: 1.25rem 2rem;
