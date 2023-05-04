@@ -29,7 +29,8 @@ const PriceBlock = ({ id, title, subtitle, info }: PriceBlockProps) => {
 							<GradeWrapper>
 								{info.map((item, index) => (
 									<GradeBox key={item.price}>
-										{item.grade} <br /> <span>{item.experience}</span>
+										{item.grade} <br /> <span>{item.experience.slice(0, 3)}</span> <br />{' '}
+										<span>{item.experience.slice(3)}</span>
 									</GradeBox>
 								))}
 							</GradeWrapper>

@@ -15,7 +15,7 @@ export const PriceBlockCard = styled('div')`
 	justify-content: center;
 `;
 export const PriceBlockWrapper = styled('div')`
-	max-width: 552px;
+	width: 552px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -44,9 +44,13 @@ export const Price = styled('div')`
 
 export const Grade = styled('div')`
 	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 `;
 
 export const GradeWrapper = styled('div')`
+	width: 100%;
 	display: flex;
 	align-items: start;
 	justify-content: space-between;
@@ -61,8 +65,13 @@ export const GradeBox = styled('div')`
 	margin-top: 23px;
 	color: ${textColorBlack};
 	span {
+		display: inline-block;
+		margin-top: 11px;
 		line-height: 14px;
 		color: ${textColorGrey};
+		&:last-child {
+			margin-top: 0;
+		}
 	}
 	&:nth-child(2) {
 		max-width: 150px;
