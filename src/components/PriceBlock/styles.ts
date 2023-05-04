@@ -15,7 +15,7 @@ export const PriceBlockCard = styled('div')`
 	justify-content: center;
 `;
 export const PriceBlockWrapper = styled('div')`
-	width: 552px;
+	width: 575px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -82,4 +82,12 @@ export const Line = styled('div')`
 	margin-top: 44px;
 	border: 1px solid ${lineColorBlack};
 	width: 475px;
+`;
+
+export const RadioInputWrapper = styled('div')`
+	display: flex;
+	width: calc(475px + 12px);
+	margin-top: -7px;
+	align-items: center;
+	justify-content: space-between;
 `;

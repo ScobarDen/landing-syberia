@@ -1,5 +1,4 @@
 import { Col, Row } from 'antd';
-import { withTranslation } from 'react-i18next';
 import { Button } from '../../common/Button';
 import Container from '../../common/Container';
 import { HeaderContentBlockSection, LeftWrapper } from './styles';
@@ -32,4 +31,4 @@ const HeaderContentBlock = ({ id, title, subtitle, text, buttonText }: HeaderCon
 	);
 };
 
-export default withTranslation()(HeaderContentBlock);
+export default HeaderContentBlock;

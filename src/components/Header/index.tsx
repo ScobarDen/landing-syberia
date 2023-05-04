@@ -37,7 +37,7 @@ const Header = ({ t }: any) => {
 		};
 		return (
 			<>
-				<CustomNavLinkSmall onClick={() => scrollTo('possimus')}>
+				<CustomNavLinkSmall onClick={() => scrollTo('priceBlock')}>
 					<Span>{t('possimus')}</Span>
 				</CustomNavLinkSmall>
 				<CustomNavLinkSmall onClick={() => scrollTo('similique')}>
