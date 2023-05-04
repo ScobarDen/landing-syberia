@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Slide } from 'react-awesome-reveal';
 import { Radio } from '../../common/Radio';
 import { gradeIndexForPriceBlockType } from '../../common/types';
 import {
@@ -22,47 +21,45 @@ const PriceBlock = ({ id, title, subtitle, info }: PriceBlockProps) => {
 	};
 	return (
 		<PriceBlockSection id={id}>
-			<Slide direction='left'>
-				<PriceBlockCard>
-					<PriceBlockWrapper>
-						<h4>
-							{title} <br /> <span>{subtitle}</span>
-						</h4>
-						<Price>от {info[gradeIndex].price} 000 ₽/мес</Price>
-						<Grade>
-							<Line />
-							<RadioInputWrapper>
-								<Radio
-									name='radio-group-grade'
-									value={0}
-									checked={gradeIndex === 0}
-									onChange={handleRadioChange}
-								/>
-								<Radio
-									name='radio-group-grade'
-									value={1}
-									checked={gradeIndex === 1}
-									onChange={handleRadioChange}
-								/>
-								<Radio
-									name='radio-group-grade'
-									value={2}
-									checked={gradeIndex === 2}
-									onChange={handleRadioChange}
-								/>
-							</RadioInputWrapper>
-							<GradeWrapper>
-								{info.map((item, index) => (
-									<GradeBox key={item.price}>
-										{item.grade} <br /> <span>{item.experience.slice(0, 3)}</span> <br />{' '}
-										<span>{item.experience.slice(3)}</span>
-									</GradeBox>
-								))}
-							</GradeWrapper>
-						</Grade>
-					</PriceBlockWrapper>
-				</PriceBlockCard>
-			</Slide>
+			<PriceBlockCard>
+				<PriceBlockWrapper>
+					<h4>
+						{title} <br /> <span>{subtitle}</span>
+					</h4>
+					<Price>от {info[gradeIndex].price} 000 ₽/мес</Price>
+					<Grade>
+						<Line />
+						<RadioInputWrapper>
+							<Radio
+								name='radio-group-grade'
+								value={0}
+								checked={gradeIndex === 0}
+								onChange={handleRadioChange}
+							/>
+							<Radio
+								name='radio-group-grade'
+								value={1}
+								checked={gradeIndex === 1}
+								onChange={handleRadioChange}
+							/>
+							<Radio
+								name='radio-group-grade'
+								value={2}
+								checked={gradeIndex === 2}
+								onChange={handleRadioChange}
+							/>
+						</RadioInputWrapper>
+						<GradeWrapper>
+							{info.map((item, index) => (
+								<GradeBox key={item.price}>
+									{item.grade} <br /> <span>{item.experience.slice(0, 3)}</span> <br />{' '}
+									<span>{item.experience.slice(3)}</span>
+								</GradeBox>
+							))}
+						</GradeWrapper>
+					</Grade>
+				</PriceBlockWrapper>
+			</PriceBlockCard>
 		</PriceBlockSection>
 	);
 };
